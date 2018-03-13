@@ -1,28 +1,27 @@
 img.home1 {
-    border: 2px solid powderblue;
     border-radius: 50%;
     width:300px;
 }
 
-a:link {
+a.home1:link {
     color: green;
     background-color: transparent;
     text-decoration: none;
 }
 
-a:visited {
-    color: pink;
+a.home1:visited {
+    color: blue;
     background-color: transparent;
     text-decoration: none;
 }
 
-a:hover {
+a.home1:hover {
     color: red;
     background-color: transparent;
     text-decoration: underline;
 }
 
-a:active {
+a.home1:active {
     color: yellow;
     background-color: transparent;
     text-decoration: underline;
