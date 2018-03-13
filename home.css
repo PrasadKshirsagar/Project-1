@@ -4,7 +4,7 @@ img.home1 {
 }
 
 a.home1:link {
-    color: green;
+    color: blue;
     background-color: transparent;
     text-decoration: none;
 }
@@ -25,4 +25,8 @@ a.home1:active {
     color: yellow;
     background-color: transparent;
     text-decoration: underline;
+}
+
+h1.home1 {
+	display: inline;
 }
