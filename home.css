@@ -5,26 +5,38 @@ img.home1 {
 
 a.home1:link {
     color: blue;
-    background-color: transparent;
+    background-color: #f44336;
+    padding: 14px 25px;
+    text-align: center;
     text-decoration: none;
+    display: inline-block;
 }
 
 a.home1:visited {
+    background-color: #f44336;
     color: blue;
-    background-color: transparent;
+    padding: 14px 25px;
+    text-align: center;
     text-decoration: none;
+    display: inline-block;
 }
 
 a.home1:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
+    background-color: #f44336;
+    color: green;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 
 a.home1:active {
-    color: yellow;
-    background-color: transparent;
-    text-decoration: underline;
+    background-color: #f44336;
+    color: blue;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 
 h1.home1 {
