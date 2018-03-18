@@ -1,6 +1,6 @@
 #Project For CSP203
 
-Our Project is Smart Blood Bank App
+Our Project is Smart Blood Connect App
 
 In this project we are planing to make web portal for user(donor/Patient) and hospital. The main aim of this project is provide a source for blood in case of emergency.
 Our portal will have three different section. One for donor, second for patient, and last for hospital.
