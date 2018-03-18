@@ -1,0 +1,44 @@
+img.home1 {
+    border-radius: 50%;
+    width:300px;
+}
+
+a.home1:link {
+    color: blue;
+    background-color: #f44336;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.home1:visited {
+    background-color: #f44336;
+    color: blue;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.home1:hover {
+    background-color: #f44336;
+    color: green;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.home1:active {
+    background-color: #f44336;
+    color: blue;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1.home1 {
+	display: inline;
+}
