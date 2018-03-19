@@ -18,7 +18,7 @@
 	  <div class = "section">
 	  <div class="btn-group btn-group-lg btn-group-justified">
 	    <div class="btn-group">
-	      <a href="homepage.php" button type="button" class="btn btn-primary">Home</button></a>
+	      <a href="homepage.php" button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span>Home</button></a>
 	    </div>
 	    <div class="btn-group">
 	      <button type="button" class="btn btn-primary">About Us</button>
@@ -31,8 +31,7 @@
 	    </div>
 	    <div class="btn-group">
 	      <a href="contact.php" class="btn btn-primary">Contact Us</a>		<!--For contacting -->
-	    </div>
-	    <!--<a href="#" class="btn btn-primary">Apple</a> -->
+		</div>
 	  </div>    
 	</div>
 	</body>
