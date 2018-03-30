@@ -305,7 +305,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .sticky {
   position: fixed;
   top: 0;
-  width: 99%;
+  width: 98%;
 }
 
 .sticky + .content {
