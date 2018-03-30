@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blood Connect</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="homepage.css">
+<link rel ="shortcut icon" href ="logo1.png"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body >
+<div class="container">
+<div class="container">
+<section class="w3-content w3-display-container w3-margin-top"style="height:10%" > 
+  <img class="mySlides" src="slide1.jpg"
+  style="width:100% ;height:20%">
+  <img class="mySlides" src="slide2.jpg"
+  style="width:100% ;height:20%">
+  <img class="mySlides" src="slide3.jpg"
+  style="width:100% ;height:20%">
+  <img class="mySlides" src="slide4.jpg"
+  style="width:100% ;height:20%">
+  <img class="mySlides" src="slide5.jpg"
+  style="width:100% ;height:20%">
+</section>
+</div>
+
+ <div class="w3-row-padding w3-margin-top">
+    <div class="w3-col s4">
+      <img src="slide1.jpg" style="width:100%">
+    </div>
+    <div class="w3-col s4">
+      <img src="slide2.jpg" style="width:100%">
+    </div>
+    <div class="w3-col s4">
+      <img src="slide3.jpg" style="width:100%">
+    </div>
+  </div>
+
+ <div class="floating-box">
+     <div class="container">
+        <h4>Blood Donation at IIT Ropar</h4>
+        <p>Sarit Kumar das inaugrated the ceremony</p>
+     </div>
+ </div>
+
+ <div class="floating-box">
+     <div class="container">
+        <h4>Blood Donation at IIT Ropar</h4>
+        <p>Sarit Kumar das inaugrated the ceremony</p>
+     </div>
+ </div>
+ <div class="floating-box">
+     <div class="container">
+        <h4>Blood Donation at IIT Ropar</h4>
+        <p>Sarit Kumar das inaugrated the ceremony</p>
+     </div>
+ </div>
+ <div class="floating-box">
+     <div class="container">
+        <h4>Blood Donation at IIT Ropar</h4>
+        <p>Sarit Kumar das inaugrated the ceremony</p>
+     </div>
+ </div>
+
+
+</div>
+</div>
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 5000);
+}
+</script>
+
+</body>
+</html>
+
