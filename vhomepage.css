@@ -363,8 +363,8 @@ h1.home1 {
 
 #footer {
    display:block;
-    background-color: #000;
-    min-height: 332px;
+    background-color: red;
+    min-height: auto;
     font-family: arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
@@ -376,7 +376,7 @@ h1.home1 {
     height: auto;
     min-height: 332px;
     margin: 0px auto;
-    margin-top: 0px;
+    margin-top: 5px;
     margin-right: auto;
     margin-bottom: 0px;
     margin-left: auto;
@@ -402,7 +402,7 @@ h1.home1 {
 }
 
 .footer_heading {
-    margin-top: 25px;
+    margin-top: 50px;
     padding-bottom: 0px;
     font-family: arial, sans-serif;
     font-weight: bold;
@@ -454,6 +454,7 @@ h1.home1 {
     font-family: arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
+    margin-top:25px;
     color: #666;
 }
 
@@ -477,7 +478,7 @@ h1.home1 {
 
 #footer_bottom {
     min-height: 45px;
-    background-color: #000;
+    background-color: red;
     color: #999;
     padding-top: 20px;
     font-family: arial, sans-serif;
@@ -492,4 +493,23 @@ h1.home1 {
     font-family: arial, sans-serif;
     font-size: 11px;
     line-height: 20px;
+}
+
+.button {
+    background-color: white; /* Green */
+    border:2px solid red;
+    color: red;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button3:hover {
+    background-color: #f44336;
+    color: white;
 }
