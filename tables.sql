@@ -38,6 +38,8 @@ CREATE TABLE address (
       pincode VARCHAR(10),
       state VARCHAR(20),
       country VARCHAR(20),
+      latitude FLOAT( 10, 6 ) NOT NULL ,
+      longitude FLOAT( 10, 6 ) NOT NULL,
       hospital_id SMALLINT UNSIGNED,
       user_id SMALLINT UNSIGNED,
       primary key (address_id),
