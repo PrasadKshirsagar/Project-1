@@ -1,0 +1,7 @@
+When user is logged as an authenticated user then the user.php file has a tab home then it should go to a separate homepage rather than same homepage.
+
+Have to add a file name about.php in all the file(also user.php). So that it tells about us.
+
+Have to add calender in the date part in the appointent.php form
+
+ 
