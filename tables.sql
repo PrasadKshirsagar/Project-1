@@ -75,3 +75,19 @@ CREATE TABLE posts (
       primary key (post_id),
       foreign key (user_id) references user(user_id) on delete set null
 );
+
+CREATE TABLE appointment (
+    appointment_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+	user_id SMALLINT UNSIGNED NOT NULL,
+	hospital_id SMALLINT UNSIGNED NOT NULL,
+	starting_date DATE NOT NULL,
+	endind_date DATE NOT NULL,
+	final_date DATE,
+	starting_time VARCHAR(20) NOT NULL,
+	ending_time  VARCHAR(20) NOT NULL,
+	final_time VARCHAR(20),
+	Hospital_pending INT DEFAULT 0,
+	PRIMARY KEY (appointment_id),
+	FOREIGN KEY (user_id) references user(user_id) on delete cascade,
+	FOREIGN KEY (hospital_id) references hospital(hospital_id) on delete cascade
+);
