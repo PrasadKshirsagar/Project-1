@@ -1,3 +1,16 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// If session variable is not set it will redirect to login page
+if(!isset($_SESSION['username']) || empty($_SESSION['username']) || !isset($_SESSION['password']) || empty($_SESSION['password']))
+{
+  header("location: login_next.php");
+  exit;
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -37,10 +50,10 @@
 	      <button type="button" class="btn btn-primary">About Us</button>
 	    </div>
       <div class="btn-group">
-        <a href="#" button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-user"></span>Hello User</button></a>  <!--For sign Up It will open into a sign up form -->
+        <a href="#" button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-user"></span>Hello <?php echo htmlspecialchars($_SESSION['username']); ?></button></a>  <!--For sign Up It will open into a sign up form -->
       </div>
       <div class="btn-group">
-        <a href="#" class="btn btn-primary">Am I Eligible</a>    <!--Have to add FAQ file-->
+        <a href="before_eligibility.php" class="btn btn-primary">Am I Eligible</a>    <!--Have to add FAQ file-->
     </div>
     <div class="btn-group">
         <a href="appointment.php" class="btn btn-primary">Fix An Appointment</a>    <!--Have to add -->
