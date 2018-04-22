@@ -1,3 +1,17 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// If session variable is not set it will redirect to login page
+if(!isset($_SESSION['username']) || empty($_SESSION['username']) || !isset($_SESSION['password']) || empty($_SESSION['password']))
+{
+  header("location: login_next.php");
+  exit;
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -36,21 +50,21 @@
 	      <a href="about.php" type="button" class="btn btn-primary">About Us</a>
 	    </div>
       <div class="btn-group">
-        <a href="#" button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-user"></span>Hello User</button></a>  <!--For sign Up It will open into a sign up form -->
+        <a href="#" button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-user"></span>Hello <?php echo htmlspecialchars($_SESSION['username']); ?></button></a>  <!--For sign Up It will open into a sign up form -->
       </div>
 	    <div class="btn-group">
         <a href="donor.php" class="btn btn-primary">Donor</a>    <!--For contacting -->
     </div>
     <div class="btn-group">
-        <a href="reciever.php" class="btn btn-primary">Recipient</a>    <!--For contacting -->
+        <a href="kreceiver.php" class="btn btn-primary">Recipient</a>    <!--For contacting -->
     </div>
       <div class="btn-group">
-	      <a href="rhlogout.php" button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-log-in"></span>Log Out</button></a>	<!--For login It will open into a login link -->
+	      <a href="logout.php" button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-log-in"></span> Log Out</button></a>	<!--For login It will open into a login link -->
 	    </div>    
 	  </div>    
 	</div>
 	</div>
-  <h2 align="center">Hello User</h2>
+  <h2 align = "center">Hi, <b><?php echo htmlspecialchars($_SESSION['username']); ?></b>. Welcome to our site.</h2>
   <hr>
   <div>
   <img width="300px" height="200px" src="user1.png" alt="Blood Donation Image" align="right">
