@@ -25,8 +25,10 @@ if (isset($_POST['submit']))
 {
 	$username = $_SESSION['username'];
 	$hospital_id = $_POST['hospital'];
-	$start_time = $POST['start_time'];
-	$end_time = $POST['end_time'];
+	$start_time = $_POST['start_time'];
+	$end_time = $_POST['end_time'];
+	$start_date = $_POST['start_date'];
+	$end_date = $_POST['end_date'];
 
 	$query1 = "SELECT user_id FROM user WHERE username = '$username'";  
        $r1 = $conn->query($query1); 
@@ -43,7 +45,10 @@ if (isset($_POST['submit']))
     }else {
 		echo "Wrong happen";}
 
-	$query2 = "INSERT into appointment(user_id,hospital_id,starting_time,ending_time) values('$user_id' , '$hospital_id','$start_time','$end_time')";	
+	
+
+	$query2 = "INSERT into appointment(user_id,hospital_id,starting_time,ending_time,starting_date,ending_date) values('$user_id' , '$hospital_id','$start_time','$end_time','$start_date','$end_date')";
+
 	$conn->query($query2);
 }
 ?>
@@ -71,7 +76,7 @@ if (isset($_POST['submit']))
 
 	}
 
-	input[type=text], input[type=time] {
+	input[type=text], input[type=TIME],input[type=DATE] {
 	    width: 100%;
 	    padding: 15px;
 	    margin: 5px 0 22px 0;
@@ -79,7 +84,7 @@ if (isset($_POST['submit']))
 	    border: none;
 	    background: #f1f1f1;
 	}
-	input[type=text]:focus, input[type=time]:focus {
+	input[type=text]:focus, input[type=TIME]:focus,input[type=DATE]:focus {
 	    background-color: #ddd;
 	    outline: none;
 	}
@@ -160,11 +165,17 @@ if (isset($_POST['submit']))
 		    	?>
 		    	
 		    </select><br>
+		    <label for="start_date"><b>Start date</b></label> <br>
+		    <input type="DATE" placeholder="start_date" name="start_date" required><br>
+
+		    <label for="end_date"><b>End date</b></label> <br>
+		    <input type="DATE" placeholder="end_date" name="end_date" required><br>
+
 			  <label for="start_time"><b>Start time</b></label> <br>
-    		  <input type="time" placeholder="HH:MM:SS" name="start_time" required> <br>
+    		  <input type="TIME" placeholder="HH:MM:SS" name="start_time" required> <br>
 
     		  <label for="end_time"><b>End time</b></label> <br>
-    		  <input type="time" placeholder="HH:MM:SS" name="end_time" required> <br>
+    		  <input type="TIME" placeholder="HH:MM:SS" name="end_time" required> <br>
      
 	    	<div class="clearfix">
 		      <button type="button" class="cancelbtn">Cancel</button>
