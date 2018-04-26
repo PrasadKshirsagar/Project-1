@@ -24,7 +24,7 @@
 	if ($result->num_rows > 0) {
 	// output data of each row
 	while($row = $result->fetch_assoc()) {
-	    echo "<html><a target=\"_blank\" href=\"kmap.php?lat=".$latitude."&long=".$longitude."&add=".$row["address"]."\"> Address: ".$row["address"]."</a></html>"." &nbsp &nbsp &nbsp &nbsp Distance in km: ".$row["distance"]."<br>";
+	    echo "<html><a target=\"_blank\" href=\"kmap.php?olat=".$latitude."&olong=".$longitude."&dlat=".$row["latitude"]."&dlong=".$row["longitude"]."\"> Address: ".$row["address"]."</a></html>"." &nbsp &nbsp &nbsp &nbsp Distance in km: ".$row["distance"]."<br>";
 	}
 	} else {
 	echo "0 results";
