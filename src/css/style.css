@@ -627,8 +627,8 @@ img.home1 {
     background-color: #000;
     min-height: 332px;
     font-family: arial, sans-serif;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 20px;			/* 14 */
+    line-height: 25px;			/* 20 */
     color: #666;
 }
 
@@ -647,8 +647,8 @@ img.home1 {
     overflow-y: hidden;
 
     font-family: arial, sans-serif;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 20px;		/* 14*/
+    line-height: 25px;		/* 20*/
     color: #666;
 }
 
@@ -657,8 +657,8 @@ img.home1 {
     padding-right: 50px;
     max-width: 200px;
     font-family: arial, sans-serif;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 20px;		/* 14*/
+    line-height: 25px;		/* 20*/
     color: #666;
 }
 
@@ -667,7 +667,7 @@ img.home1 {
     padding-bottom: 0px;
     font-family: arial, sans-serif;
     font-weight: bold;
-    font-size: 11px;
+    font-size: 18px;	/* 11px*/
     color: white;
 }
 
@@ -676,7 +676,7 @@ img.home1 {
     padding-bottom: 0px;
     font-family: arial, sans-serif;
     font-weight: bold;
-    font-size: 11px;
+    font-size: 44px;		/* 11 have to change here.*/
     color: white;
     line-height: 20px;
     margin: 0px 0px 10px 0px;
@@ -684,7 +684,7 @@ img.home1 {
 
 .footer_item ul, .footer_item li, .footer_item_info li, .footer_item a {
     font-family: arial, sans-serif;
-    font-size: 11px;
+    font-size: 14px;    /*11px Have to change here.*/
     color: #999;
     text-decoration: none;
     text-decoration-color: currentcolor;
